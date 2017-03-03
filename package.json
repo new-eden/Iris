@@ -1,5 +1,5 @@
 {
-  "name": "xmpp-relay",
+  "name": "iris",
   "version": "0.0.1",
   "main": "bot.js",
   "dependencies": {
