@@ -2,5 +2,7 @@
     "username": "",
     "password": "",
     "server": "",
-    "webhookurl": "https://ptb.discordapp.com/api/webhooks/..../slack"
+    "webhookurl": "https://ptb.discordapp.com/api/webhooks/..../slack",
+    "webhookChannel": "#channel",
+    "webhookUsername": "botnamebruh",
 }
