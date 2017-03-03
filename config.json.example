@@ -4,5 +4,5 @@
     "server": "",
     "webhookurl": "https://ptb.discordapp.com/api/webhooks/..../slack",
     "webhookChannel": "#channel",
-    "webhookUsername": "botnamebruh",
+    "webhookUsername": "botnamebruh"
 }
