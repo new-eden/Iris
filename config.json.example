@@ -1,8 +1,15 @@
 {
-    "username": "",
+    "jid": "user@server",
     "password": "",
-    "server": "",
+    "host": "server",
+    "port": 5222,
     "webhookurl": "https://ptb.discordapp.com/api/webhooks/..../slack",
     "webhookChannel": "#channel",
-    "webhookUsername": "botnamebruh"
+    "webhookUsername": "Bot Name on Discord/Slack",
+    "specialWebhooks": {
+        "titan": {
+            "webhookChannel": "#channel",
+            "webhookUsername": "Bot Name on Discord/Slack"
+        }
+    }
 }
