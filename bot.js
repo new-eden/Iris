@@ -53,13 +53,24 @@ xmpp.on("stanza", function(stanza) {
 	        	// Pass message on to Discord
 	        	slack = new Slack();
 	        	slack.setWebhook(config.webhookurl);
-	        	slack.webhook({
-	        	      channel: config.webhookChannel,
-	        	      username: config.webhookUsername,
-	        	      text: "@everyone **" + message + "**"
-	        	}, function(err, response) {
-	        	      log(response);
-	        	});
+
+				if(message.indexOf("to titan ==") > -1) {
+					slack.webhook({
+						channel: config.specialWebhooks.titan.webhookChannel,
+						username: config.specialWebhooks.titan.webhookUsername,
+						text: "@everyone **" + message + "**"
+					}, function(err, response) {
+						log(response);
+					});
+				} else {
+					slack.webhook({
+						channel: config.webhookChannel,
+						username: config.webhookUsername,
+						text: "@everyone **" + message + "**"
+					}, function(err, response) {
+						log(response);
+					});
+				}
 		}
 	}
 });
